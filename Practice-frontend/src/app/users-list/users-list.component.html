@@ -1,0 +1,19 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of users">
+        <td>{{i.name}}</td>
+        <td>{{i.email}}</td>      
+      </tr>    
+    </tbody>
+  </table>
+</div>
+
+<a [routerLink]="['/users']">Register</a>
